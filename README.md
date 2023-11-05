@@ -1,1 +1,3 @@
 Hello! I am Fendel Nikita, OmSU student, MPB-101-O-01 group. Completed the first laboratory work, created a description of the game "Dota 2" using Compose!
+![firstScreen](assets/firstScreenshot.png)
+![secondScreen](assets/secondScreenshot.png)

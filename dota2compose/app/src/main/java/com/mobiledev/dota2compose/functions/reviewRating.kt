@@ -9,6 +9,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -30,7 +32,7 @@ fun reviewRating(){
                 fontSize = 48.sp,
                 fontFamily = FontFamily(Font(R.font.sk_modernist)),
                 fontWeight = FontWeight(700),
-                color = Color(0xFFFFFFFF),
+                color = colorResource(R.color.white),
             )
         )
         Column(
@@ -42,7 +44,10 @@ fun reviewRating(){
                 contentDescription = "Stars icons",
                 modifier = Modifier
                     .padding(top = 17.dp)
-                    .size(76.dp, 12.dp)
+                    .size(
+                        dimensionResource(id = R.dimen.stars__width),
+                        dimensionResource(id = R.dimen.stars__height)
+                    )
             )
             Text(
                 modifier = Modifier
@@ -52,7 +57,7 @@ fun reviewRating(){
                     fontSize = 12.sp,
                     fontFamily = FontFamily(Font(R.font.sk_modernist)),
                     fontWeight = FontWeight(400),
-                    color = Color(0xFFA8ADB7),
+                    color = colorResource(R.color.commemt__text),
                     letterSpacing = 0.5.sp,
                 )
             )

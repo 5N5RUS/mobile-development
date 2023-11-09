@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.mobiledev.dota2compose.R
@@ -17,7 +18,7 @@ import com.mobiledev.dota2compose.R
 fun dotaGameplayIcon(){
     Box(
         modifier = Modifier
-            .border(width = 0.7.dp, color = Color(0x00FFFFFF))
+            .border(width = 0.7.dp, color = Color(R.color.dota__gameplay__color))
             .padding(0.7.dp)
             .offset(96.dp, 43.dp)
     ) {
@@ -25,7 +26,7 @@ fun dotaGameplayIcon(){
             painter = painterResource(id = R.drawable.dota_gameplay_icon),
             contentDescription = "Dota gameplay icon",
             modifier = Modifier
-                .size(48.dp)
+                .size(dimensionResource(id = R.dimen.dota__gameplay__icon))
         )
     }
 }

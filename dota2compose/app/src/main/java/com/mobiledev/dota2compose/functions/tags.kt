@@ -13,6 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -25,9 +27,12 @@ import com.mobiledev.dota2compose.R
 fun tags(){
     Box(
         modifier = Modifier
-            .size(53.dp, 22.dp)
+            .size(
+                dimensionResource(id = R.dimen.first__tag__width),
+                dimensionResource(id = R.dimen.tags__height),
+            )
             .background(
-                color = Color(0x3D44A9F4),
+                color = colorResource(R.color.tags__background),
                 shape = RoundedCornerShape(size = 100.dp)
             )
     ){
@@ -43,17 +48,20 @@ fun tags(){
                     fontSize = 10.sp,
                     fontFamily = FontFamily(Font(R.font.montserrat)),
                     fontWeight = FontWeight(500),
-                    color = Color(0xFF44A9F4),
+                    color = colorResource(R.color.tags__text),
                 )
             )
         }
     }
     Box(
         modifier = Modifier
-            .size(93.dp, 22.dp)
+            .size(
+                dimensionResource(id = R.dimen.second__tag__width),
+                dimensionResource(id = R.dimen.tags__height),
+            )
             .offset(10.dp)
             .background(
-                color = Color(0x3D44A9F4),
+                color = colorResource(R.color.tags__background),
                 shape = RoundedCornerShape(size = 100.dp)
             )
     ){
@@ -69,17 +77,20 @@ fun tags(){
                     fontSize = 10.sp,
                     fontFamily = FontFamily(Font(R.font.montserrat)),
                     fontWeight = FontWeight(500),
-                    color = Color(0xFF44A9F4),
+                    color = colorResource(R.color.tags__text),
                 )
             )
         }
     }
     Box(
         modifier = Modifier
-            .size(73.dp, 22.dp)
+            .size(
+                dimensionResource(id = R.dimen.third__tag__width),
+                dimensionResource(id = R.dimen.tags__height),
+            )
             .offset(20.dp)
             .background(
-                color = Color(0x3D44A9F4),
+                color = colorResource(R.color.tags__background),
                 shape = RoundedCornerShape(size = 100.dp)
             )
     ){
@@ -95,7 +106,7 @@ fun tags(){
                     fontSize = 10.sp,
                     fontFamily = FontFamily(Font(R.font.montserrat)),
                     fontWeight = FontWeight(500),
-                    color = Color(0xFF44A9F4),
+                    color = colorResource(R.color.tags__text),
                 )
             )
         }

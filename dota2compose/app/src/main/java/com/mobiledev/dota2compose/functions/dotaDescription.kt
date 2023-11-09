@@ -5,6 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -24,7 +25,7 @@ fun dotaDescription(){
             lineHeight = 19.sp,
             fontFamily = FontFamily(Font(R.font.sk_modernist)),
             fontWeight = FontWeight(400),
-            color = Color(0xB2EEF2FB),
+            color = colorResource(R.color.text),
         )
     )
 }

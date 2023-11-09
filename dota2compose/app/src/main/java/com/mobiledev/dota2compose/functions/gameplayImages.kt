@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.mobiledev.dota2compose.R
@@ -21,7 +22,10 @@ fun gameplayImages(){
             painter = painterResource(id = R.drawable.gameplay1),
             contentDescription = "First gameplay image",
             modifier = Modifier
-                .size(240.dp, 128.dp)
+                .size(
+                    dimensionResource(id = R.dimen.gameplay__image__width),
+                    dimensionResource(id = R.dimen.gameplay__image__height)
+                )
                 .clip(RoundedCornerShape(14.dp)),
             contentScale = ContentScale.FillBounds
         )
@@ -31,7 +35,10 @@ fun gameplayImages(){
         painter = painterResource(id = R.drawable.gameplay2),
         contentDescription = "Second gameplay image",
         modifier = Modifier
-            .size(240.dp, 128.dp)
+            .size(
+                dimensionResource(id = R.dimen.gameplay__image__width),
+                dimensionResource(id = R.dimen.gameplay__image__height)
+            )
             .padding(start = 15.dp)
             .clip(RoundedCornerShape(14.dp)),
         contentScale = ContentScale.FillBounds

@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -25,13 +27,12 @@ fun secondReview(){
     Row(
         modifier = Modifier
             .padding(start = 24.dp)
-            .background(color = Color(0xFF050B18))
     ) {
         Image(
             painter = painterResource(id = R.drawable.jang),
             contentDescription = "Jang image",
             modifier = Modifier
-                .size(38.dp)
+                .size(dimensionResource(id = R.dimen.review__image))
                 .padding(top = 2.dp),
         )
         Column(
@@ -46,7 +47,7 @@ fun secondReview(){
                     fontSize = 16.sp,
                     fontFamily = FontFamily(Font(R.font.sk_modernist)),
                     fontWeight = FontWeight(400),
-                    color = Color(0xFFFFFFFF),
+                    color = colorResource(R.color.white),
                     letterSpacing = 0.5.sp,
                 )
             )
@@ -56,7 +57,7 @@ fun secondReview(){
                     fontSize = 12.sp,
                     fontFamily = FontFamily(Font(R.font.sk_modernist)),
                     fontWeight = FontWeight(400),
-                    color = Color(0x66FFFFFF),
+                    color = colorResource(R.color.data__color),
                     letterSpacing = 0.5.sp,
                 )
             )
@@ -64,15 +65,14 @@ fun secondReview(){
     }
     Text(
         modifier = Modifier
-            .padding(24.dp, 16.dp, 24.dp, 0.dp)
-            .background(color = Color(0xFF050B18)) ,
+            .padding(24.dp, 16.dp, 24.dp, 0.dp),
         text = "“Once you start to learn its secrets, there’s a wild and exciting variety of play here that’s unmatched, even by its peers.”",
         style = TextStyle(
             fontSize = 12.sp,
             lineHeight = 20.sp,
             fontFamily = FontFamily(Font(R.font.sk_modernist)),
             fontWeight = FontWeight(400),
-            color = Color(0xFFA8ADB7),
+            color = colorResource(R.color.commemt__text),
             letterSpacing = 0.5.sp,),
     )
 }

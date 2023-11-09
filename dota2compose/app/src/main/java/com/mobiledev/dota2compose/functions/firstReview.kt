@@ -10,6 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -29,7 +31,7 @@ fun firstReview(){
             painter = painterResource(id = R.drawable.auguste),
             contentDescription = "Auguste image",
             modifier = Modifier
-                .size(38.dp)
+                .size(dimensionResource(id = R.dimen.review__image))
                 .padding(top = 2.dp),
         )
         Column(
@@ -45,7 +47,7 @@ fun firstReview(){
                     fontSize = 16.sp,
                     fontFamily = FontFamily(Font(R.font.sk_modernist)),
                     fontWeight = FontWeight(400),
-                    color = Color(0xFFFFFFFF),
+                    color = colorResource(R.color.white),
                     letterSpacing = 0.5.sp,
                 )
             )
@@ -55,7 +57,7 @@ fun firstReview(){
                     fontSize = 12.sp,
                     fontFamily = FontFamily(Font(R.font.sk_modernist)),
                     fontWeight = FontWeight(400),
-                    color = Color(0x66FFFFFF),
+                    color = colorResource(R.color.data__color),
                     letterSpacing = 0.5.sp,
                 )
             )
@@ -70,7 +72,7 @@ fun firstReview(){
             lineHeight = 20.sp,
             fontFamily = FontFamily(Font(R.font.sk_modernist)),
             fontWeight = FontWeight(400),
-            color = Color(0xFFA8ADB7),
+            color = colorResource(R.color.commemt__text),
             letterSpacing = 0.5.sp,),
     )
 }

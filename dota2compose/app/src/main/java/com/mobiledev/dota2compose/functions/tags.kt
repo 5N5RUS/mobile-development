@@ -8,21 +8,20 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.mobiledev.dota2compose.R
+import com.mobiledev.dota2compose.ui.theme.tags
 
+@Preview
 @Composable
 fun tags(){
     Box(
@@ -43,13 +42,8 @@ fun tags(){
                 .padding(10.dp, 5.dp)
         ) {
             Text(
-                text = "MOBA",
-                style = TextStyle(
-                    fontSize = 10.sp,
-                    fontFamily = FontFamily(Font(R.font.montserrat)),
-                    fontWeight = FontWeight(500),
-                    color = colorResource(R.color.tags__text),
-                )
+                text = stringResource(id = R.string.moba),
+                style = MaterialTheme.typography.tags
             )
         }
     }
@@ -72,13 +66,8 @@ fun tags(){
                 .padding(10.dp, 5.dp)
         ) {
             Text(
-                text = "MULTIPLAYER",
-                style = TextStyle(
-                    fontSize = 10.sp,
-                    fontFamily = FontFamily(Font(R.font.montserrat)),
-                    fontWeight = FontWeight(500),
-                    color = colorResource(R.color.tags__text),
-                )
+                text = stringResource(id = R.string.multiplayer),
+                style = MaterialTheme.typography.tags
             )
         }
     }
@@ -101,13 +90,8 @@ fun tags(){
                 .padding(10.dp, 5.dp)
         ) {
             Text(
-                text = "STRATEGY",
-                style = TextStyle(
-                    fontSize = 10.sp,
-                    fontFamily = FontFamily(Font(R.font.montserrat)),
-                    fontWeight = FontWeight(500),
-                    color = colorResource(R.color.tags__text),
-                )
+                text = stringResource(id = R.string.strategy),
+                style = MaterialTheme.typography.tags
             )
         }
     }

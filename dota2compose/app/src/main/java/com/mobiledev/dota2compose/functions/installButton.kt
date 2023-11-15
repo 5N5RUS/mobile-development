@@ -46,7 +46,6 @@ fun installButton() {
                     .fillMaxWidth()
             ) {
                 Text(
-
                     text = stringResource(id = R.string.istallButton),
                     style = MaterialTheme.typography.installButton
                 )

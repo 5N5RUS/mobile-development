@@ -13,4 +13,5 @@
     <dimen name="second__tag__width">93.dp</dimen>
     <dimen name="third__tag__width">73.dp</dimen>
     <dimen name="tags__height">22.dp</dimen>
+    <dimen name="installButtonHeight">64.dp</dimen>
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dota__gameplay__icon">48.dp</dimen>
+    <dimen name="dota__icon">150.dp</dimen>
+    <dimen name="review__image">38.dp</dimen>
+    <dimen name="gameplay__image__width">240.dp</dimen>
+    <dimen name="gameplay__image__height">128.dp</dimen>
+    <dimen name="header__image__width">628.dp</dimen>
+    <dimen name="header__image__height">354.dp</dimen>
+    <dimen name="stars__width">76.dp</dimen>
+    <dimen name="stars__height">12.dp</dimen>
+    <dimen name="first__tag__width">53.dp</dimen>
+    <dimen name="second__tag__width">93.dp</dimen>
+    <dimen name="third__tag__width">73.dp</dimen>
+    <dimen name="tags__height">22.dp</dimen>
+    <dimen name="installButtonHeight">64.dp</dimen>
+</resources>

@@ -1,8 +1,8 @@
 # **Greeting and Description ^-^**
 
-Hello! I am Fendel Nikita, OmSU student, MPB-101-O-01 group. Completed the first laboratory work, created a description of the game "Dota 2" using Compose!
+Hello! I am Fendel Nikita, OmSU student, MPB-101-O-01 group. Completed the second laboratory work, I have created an application screen for a private clinic that can be used by clients and doctors!
 
 # **Screenshots**
-![firstScreen](dota2compose/assets/firstScreen.png)
+![firstScreen](doctorapp/assets/firstScreen.png)
 
-![secondScreen](dota2compose/assets/secondScreen.png)
+![secondScreen](doctorapp/assets/secondScreen.png)
